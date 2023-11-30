@@ -1,0 +1,62 @@
+.Kotak {
+  background: white;
+  height: 650px;
+  margin: 1rem auto 8.1rem auto;
+  width: 340px;
+}
+
+.Header {
+  display: flex;
+  padding: 5px;
+  gap: 15px;
+}
+
+#kembaliButton {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#kembaliButton img {
+  width: 17.86px;
+  height: 28.31px;
+  margin-right: 10px;
+}
+
+.Objek {
+  display: flex;
+  background-color: rgba(65, 215, 236, 1);
+  margin-top: 80px;
+  margin-left: 65px;
+  width: 230px;
+  height: 383px;
+}
+
+.Objek img {
+  margin-left: 25px;
+  margin-top: 25px;
+}
+
+.selamat-text {
+  position: absolute;
+  top: 24%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Mengatur teks agar berada di tengah */
+  font-family: "Lato", sans-serif;
+  color: black;
+  padding: 10px;
+}
+
+.Next {
+  margin-top: 310px;
+  left: 88%;
+  transform: translateX(-88%);
+}
+
+.Next button {
+  background-color: white;
+  border-radius: 20px;
+  width: 214px;
+  height: 51px;
+  font-size: 28px;
+  line-height: 20px;
+}

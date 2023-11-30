@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+/*nabvar*/
+nav {
+  display: flex;
+  background-color: rgb(106, 21, 175);
+  justify-content: space-around;
+  width: 100%;
+  padding: 20px 0;
+  color: white;
+}
+
+nav.logo {
+  font-family: "Schoolbell", cursive;
+}
+
+main a {
+text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  width: 40%;
+  justify-content: space-between;
+}
+
+nav ul li a {
+  color: rgb(195, 142, 238);
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+nav ul li a:hover {
+  color: white;
+}
+
+/* Gaya dasar untuk card container */
+.card-container {
+  display: flex;
+  grid-template-columns: repeat(3, 1fr); /* Tiga card dalam satu baris */
+  gap: 20px; /* Jarak antara card */
+}
+
+.card-image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.card img {
+  width: 50px;
+  height: 50px;
+}
+
+.card p {
+  width: 100%;
+}
+
+
+/* Gaya untuk setiap card */
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.blue-text {
+  color: blue; /* Warna huruf */
+}
+
+.red-text {
+  color: red; /* Warna angka */
+}
+
+.yellow-text {
+  color: rgb(241, 198, 7); /* Warna huruf */
+}
+
+.green-text {
+  color: green; /* Warna angka */
+}
+
+.orange-text {
+  color: rgb(235, 129, 9); /* Warna huruf */
+}
+
+.purple-text {
+  color: purple; /* Warna angka */
+}
+
+.sky-text {
+  color: skyblue; /* Warna angka */
+}
+
+
+/* Animasi ketika hover */
+.card:hover {
+  transform: scale(1.05);
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* HAMBURGER MENU */
+.menu-toggle {
+  display: flex;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: white;
+  border-radius: 3px;
+}
+
+/* responsiv */
+@media screen and (max-width: 768px) {
+  nav ul {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  nav ul {
+    display: none;
+  }
+}
+
+@media screen and(min-width: 300px) {
+  .card  {
+    width: max-content;
+  }
+}

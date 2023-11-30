@@ -1,0 +1,51 @@
+.body {
+    background-color: white;
+}
+
+.cardH {
+    background: white;
+    border-radius: 0px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+    height: 650px;
+    margin: 6rem auto 8.1rem auto;
+    width: 340px;
+}
+
+.gambr {
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+}
+
+.formH {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 0px;
+    padding-bottom: 28px;
+}
+
+.text-h {
+    text-align: center;
+    margin-top: 0%;
+    margin-bottom: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: "Carter One";
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.btn {
+    background-color: #3B9ED6;
+    color: white;
+    border-radius: 48px;
+    padding: 15px 89px;
+    font-size: 21px;
+    margin: 15px;
+}
+
+.Hbtn {
+    
+}

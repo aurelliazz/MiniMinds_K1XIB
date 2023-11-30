@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <link rel="stylesheet" href="warna2.css" />
+    <title>Tebak Warna</title>
+  </head>
+
+  <body class="Kotak">
+    <div class="Header">
+      <a id="kembaliButton" href="javascript:void(0)">
+        <img
+          src="Vector.png"
+          width="17.86"
+          height="28.31"
+          alt="Kembali ke Halaman Sebelumnya"
+        />
+      </a>
+      <img src="Rectangle 51.png" width="280" height="22" />
+    </div>
+
+    <div class="Text">
+      <p>Temukan warna merah!</p>
+    </div>
+
+    <div class="kotak">
+      <div class="blue-box" onclick="salah()"></div>
+      <div class="box">
+        <div class="red-box" onclick="showNotification()"></div>
+        <div class="yellow-box" onclick="salah1()"></div>
+      </div>
+    </div>
+
+    <div class="Next">
+      <button id="lanjutButton">Lanjut!!!</button>
+    </div>
+
+    <script>
+      function showNotification() {
+        Swal.fire("Selamat!", "Anda benar, ini warna merah!", "success");
+      }
+
+      function salah() {
+        Swal.fire(
+          "Salah!",
+          "Ini adalah warna biru, silahkan coba lagi!",
+          "error"
+        );
+      }
+
+      function salah1() {
+        Swal.fire(
+          "Salah!",
+          "Ini adalah warna kuning, silahkan coba lagi!",
+          "error"
+        );
+      }
+
+      const kembaliButton = document.getElementById("kembaliButton");
+
+      // Menambahkan event listener ke tombol "Kembali" untuk kembali ke halaman sebelumnya
+      kembaliButton.addEventListener("click", function () {
+        history.back();
+      });
+
+      const lanjutButton = document.getElementById("lanjutButton");
+
+      // Menambahkan event listener ke tombol "Lanjut!!!" untuk mengarahkan ke halaman berikutnya
+      lanjutButton.addEventListener("click", function () {
+        window.location.href = "warna3.html";
+      });
+    </script>
+  </body>
+</html>

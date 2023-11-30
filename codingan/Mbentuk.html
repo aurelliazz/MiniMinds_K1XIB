@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Mbentuk.css">
+    <link href='https://fonts.googleapis.com/css?family=Lexend' rel='stylesheet'>
+    <title>Menebak bentuk</title>
+</head>
+<body class="kartu">
+    <div class="">
+        <img class="gbr1" src="Vector.png">
+        <img class="gbr2" src="indikator.png">
+    </div>
+    <div>
+        <h1 class="soal1">Manakah bentuk kotak?</h1>
+    </div>
+    <div>
+        <img class="gbr3" id="kotak" src="kotak.png" alt="squre" onclick="checkAnswer('kotak')">
+        <img class="gbr4" id="segitiga" src="segitiga.png" alt="tringle" onclick="checkAnswer('segitiga')">
+    </div>
+ <button id="nextButton" onclick="nextQuestion()">Lanjutkan</button>
+ <script src="M.js"></script>
+</body>
+</html>

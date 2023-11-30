@@ -1,0 +1,60 @@
+body {
+    background-color: white;
+}
+
+.CardN {
+    background: white;
+    border-radius: 0px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+    height: 650px;
+    margin: 6rem auto 8.1rem auto;
+    width: 340px;
+}
+
+.Png {
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+}
+
+.text-heading {
+    text-align: center;
+    margin-top: 0%;
+    margin-bottom: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: "Carter One";
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.Form {
+    text-align: center;
+ font-size: 30px;
+ padding-top: 0px;
+ padding-bottom: 28px;
+}
+
+.kolom {
+    width: 220px;
+    height: 49px;
+    font-size: 20px;
+    border-radius: 30px;
+    padding-left: 20px;
+    padding: 5px 20px;
+    margin: 10px;
+}
+
+.record {
+    background-color: #3B9ED6;
+    color: white;
+    border-radius: 48px;
+    padding: 10px 90px;
+    font-size: 25px;
+}
+
+.Rbtn {
+    
+}

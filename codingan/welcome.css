@@ -1,0 +1,37 @@
+.body {
+
+  background-color: white;
+
+}
+
+.card {
+    background: #59B7EC;
+    border-radius: 0px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+    height: 620px;
+    margin: 6rem auto 8.1rem auto;
+    width: 340px;
+}
+
+.Lpng {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 60px;
+    margin-bottom: 5px;
+}
+
+.form {
+    text-align: center;
+   font-size: 40px;
+   padding-top: 90px;
+   padding-bottom: 28px;
+}
+
+.tombol {
+    background-color: #21485E;
+    color: white;
+    border-radius: 48px;
+    padding: 15px 89px;
+    font-size: 21px;
+    margin: 15px;
+}

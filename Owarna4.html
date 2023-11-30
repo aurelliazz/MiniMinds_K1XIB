@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="Owarna4.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Lemon&display=swap" rel="stylesheet"> 
+    <title>Tebak Warna</title>
+</head>
+
+<body class="Kotak">
+    <div class="Header">
+        <a id="kembaliButton" href="javascript:void(0)">
+            <img src="Vector.png" width="17.86" height="28.31">
+        </a>
+        <img src="Rectangle 51.png" width="280" height="22">
+    </div>    
+
+    <div class="Objek">
+        <img src="Group 18.png" width="173" height="258">
+        <p class="selamat-text">Selamat</p>
+
+        <div class="Next">
+            <button id="lanjutButton">lanjutkan</button>
+        </div>
+    </div>
+
+    <script>
+      const kembaliButton = document.getElementById('kembaliButton');
+      const lanjutButton = document.getElementById('lanjutButton');
+
+      kembaliButton.addEventListener('click', function() {
+      history.back();
+      });
+
+      lanjutButton.addEventListener('click', function() {
+      window.location.href = 'pilihanWarna.html';
+      });
+      
+    </script>
+</body>
+</html>

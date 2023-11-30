@@ -1,0 +1,74 @@
+.body {
+    background-color: white;
+}
+
+.kartu {
+    background: white;
+    border-radius: 0px;
+    height: 650px;
+    margin: 6rem auto 8.1rem auto;
+    width: 340px;
+}
+
+.soal3 {
+   text-align: center;
+   font-family: 'Lexend';font-size: 22px;
+}
+
+.gbr1 {
+    position: relative;
+    left: 5px;
+    top: 5px;
+}
+
+.gbr2 {
+  position: relative;
+  left: 10px;
+}
+
+.gbr7 {
+   width: 166px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   cursor: pointer;
+}
+
+.gbr8 {
+    width: 182px;
+    display: block;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: rgb(173, 246, 182);
+}
+
+.gbr7:hover {
+    transform: scale(1.1); /* Efek zoom saat hover */
+}
+
+.gbr8:hover {
+    transform: scale(1.1); /* Efek zoom saat hover */
+}
+
+button {
+    padding: 20px 71px;
+    display: block;
+    background-color: #41D7EC;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    margin: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.1); /* Efek zoom saat hover */
+}

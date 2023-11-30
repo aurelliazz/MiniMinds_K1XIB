@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="Owarna1.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lexend" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet"/>
+    <title>Tebak Warna</title>
+  </head>
+
+  <body class="Kotak">
+    <div class="Header">
+      <a id="kembaliButton" href="javascript:void(0)">
+        <img src="Vector.png" width="17.86" height="28.31" />
+      </a>
+      <img src="Rectangle 51.png" width="280" height="22" />
+    </div>
+
+    <div class="Text">
+      <p>Benda ini berwarna apa?</p>
+    </div>
+
+    <div class="Objek">
+      <img src="Rectangle 78.png" width="240" height="217" />
+    </div>
+
+    <div class="Pilihan">
+      <button class="option" data-color="blue">biru</button>
+      <button class="option" data-color="red">merah</button>
+
+      <div class="ButtonRow center">
+        <button class="option" data-color="yellow">kuning</button>
+      </div>
+    </div>
+
+    <div class="Next">
+      <button id="lanjutButton">Lanjut!!!</button>
+    </div>
+
+    <script>
+      const kembaliButton = document.getElementById('kembaliButton');
+      const lanjutButton = document.getElementById('lanjutButton');
+      const pilihanButtons = document.querySelectorAll('.option');
+
+      kembaliButton.addEventListener('click', function() {
+          history.back();
+      });
+
+      lanjutButton.addEventListener('click', function() {
+          window.location.href = 'Owarna2.html';
+      });
+
+      pilihanButtons.forEach(function(button) {
+          button.addEventListener('click', function() {
+              console.log('Tombol ditekan'); 
+
+              const selectedColor = button.getAttribute('data-color');
+              if (selectedColor === 'blue') {
+                  Swal.fire('Salah!', 'Benda ini bukan berwarna biru, silahkan coba lagi!', 'error');
+              } else if (selectedColor === 'red') {
+                  Swal.fire('Benar!', 'Benda ini berwarna merah!', 'success');
+              } else if (selectedColor === 'yellow') {
+                  Swal.fire('Salah!', 'Benda ini bukan berwarna kuning, silahkan coba lagi!', 'error');
+              }
+          });
+      });
+    </script>
+  </body>
+</html>

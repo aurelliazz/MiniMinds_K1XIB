@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <link rel="stylesheet" href="warna1.css" />
+    <title>Tebak Warna</title>
+  </head>
+
+  <body class="Kotak">
+    <div class="Header">
+      <a id="kembaliButton" href="javascript:void(0)">
+        <img src="Vector.png" width="17.86" height="28.31"/>
+      </a>
+      <img src="Rectangle 51.png" width="280" height="22" />
+    </div>
+
+    <div class="Text">
+      <p>Temukan warna biru!</p>
+    </div>
+
+    <div class="kotak">
+      <div class="red-box" onclick="salah()"></div>
+
+      <div class="box">
+        <div class="yellow-box" onclick="salah1()"></div>
+        <div class="blue-box" onclick="showNotification()"></div>
+      </div>
+    </div>
+
+    <div class="Next">
+      <button id="lanjutButton">Lanjut!!!</button>
+    </div>
+
+    <script>
+      const kembaliButton = document.getElementById("kembaliButton");
+      const lanjutButton = document.getElementById("lanjutButton");
+
+      kembaliButton.addEventListener("click", function () {
+        history.back();
+      });
+
+      lanjutButton.addEventListener("click", function () {
+        window.location.href = "warna2.html";
+      });
+
+      function showNotification() {
+        Swal.fire("Selamat!", "Anda benar, ini warna biru!", "success");
+      }
+
+      function salah() {
+        Swal.fire("Salah!", "Ini adalah warna merah, silahkan coba lagi!", "error");
+      }
+
+      function salah1() {
+        Swal.fire("Salah!", "Ini adalah warna kuning, silahkan coba lagi!", "error");
+      }
+    </script>
+  </body>
+</html>

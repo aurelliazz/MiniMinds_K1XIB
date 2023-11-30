@@ -1,0 +1,83 @@
+.Kotak {
+  background: white;
+  height: 650px;
+  margin: 1rem auto 8.1rem auto;
+  width: 340px;
+}
+
+.Header {
+  display: flex;
+  padding: 5px;
+  gap: 15px;
+}
+
+#kembaliButton {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#kembaliButton img {
+  width: 17.86px;
+  height: 28.31px;
+  margin-right: 10px;
+}
+
+.Text {
+  margin-left: 15px;
+  font-family: "Lexend", sans-serif;
+}
+
+.kotak {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px 50px;
+}
+
+.red-box {
+  width: 80px;
+  height: 70px;
+  background-color: red;
+  padding: 20px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+}
+
+.box {
+  display: flex;
+  gap: 35px;
+}
+.blue-box {
+  background-color: blue;
+  width: 80px;
+  height: 70px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.yellow-box {
+  background-color: yellow;
+  padding: 20px;
+  width: 80px;
+  height: 70px;
+  border-radius: 10px;
+}
+
+.Next {
+  font-family: "NamaFontGujarati", sans-serif;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.Next button {
+  background-color: rgba(65, 215, 236, 1);
+  color: white;
+  width: 218px;
+  height: 51px;
+  font-size: 25px;
+  line-height: 5px;
+  border: 1px solid black;
+  border-radius: 20px;
+  cursor: pointer;
+}
